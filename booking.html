@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>
+      Book and Get a Concrete Quote | Snakes Concrete LLC
+    </title>
+    <meta
+      name="description"
+      content="Use the Snakes Concrete quote calculator, pick a date, and get your estimate emailed. Free estimates in Georgia, Tennessee and Alabama."
+    />
+    <meta
+      name="theme-color"
+      content="#0e1630"
+    />
+    <link
+      rel="icon"
+      href="assets/img/favicon.png"
+    />
+    <meta
+      property="og:title"
+      content="Book and Get a Concrete Quote | Snakes Concrete LLC"
+    />
+    <meta
+      property="og:description"
+      content="Use the Snakes Concrete quote calculator, pick a date, and get your estimate emailed. Free estimates in Georgia, Tennessee and Alabama."
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Snakes Concrete LLC",
+        "telephone": "+17628875610",
+        "email": "Fernandoenriquez1510@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rossville",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        "areaServed": ["Georgia", "Tennessee", "Alabama"],
+        "slogan": "Pouring Quality You Can Trust"
+      }
+    </script>
+  </head>
+  <body data-root="">
+    <a
+      class="skip"
+      href="#main"
+      >Skip to content</a
+    >
+    <div
+      class="progress"
+      aria-hidden="true"
+    ></div>
+    <div class="topbar">
+      <div class="wrap">
+        <span class="hide-s"
+          >Pouring quality you can trust in Georgia,
+          Tennessee and Alabama</span
+        ><span
+          ><a
+            data-phone
+            data-keep
+            href="#"
+            >762-887-5610</a
+          ><span class="hide-s"
+            ><a
+              data-email
+              data-keep
+              href="#"
+              >email us</a
+            ></span
+          ></span
+        >
+      </div>
+    </div>
+    <header class="hdr">
+      <div class="wrap">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Snakes Concrete LLC home"
+          ><img
+            src="assets/img/mark-dark.png"
+            alt=""
+            width="52"
+            height="52"
+          /><span
+            ><b>Snakes Concrete</b
+            ><small
+              >Residential and commercial concrete</small
+            ></span
+          ></a
+        ><button
+          class="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span>
+        </button>
+        <nav
+          class="nav"
+          id="nav"
+          aria-label="Main"
+        >
+          <a href="index.html">Home</a
+          ><a href="about.html">About</a
+          ><a href="services.html">Services</a
+          ><a href="stamped-decorative.html"
+            >Stamped concrete</a
+          ><a href="gallery.html">Gallery</a>
+          <div class="more">
+            <button
+              class="more-btn"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              More
+            </button>
+            <div class="more-menu">
+              <a href="process.html">How we work</a
+              ><a href="service-areas.html">Service areas</a
+              ><a href="reviews-faq.html">Reviews and FAQ</a
+              ><a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <a
+            class="btn btn-primary"
+            href="booking.html"
+            >Book and get a quote</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="phero">
+        <div class="phero-bg">
+          <img
+            src="assets/img/slab-shadows.jpg"
+            alt=""
+            width="1600"
+            height="900"
+          />
+        </div>
+        <div class="wrap">
+          <p class="crumbs">
+            <a href="index.html">Home</a> / Book and quote
+          </p>
+          <h1>Book and get your quote</h1>
+          <p>
+            Build your estimate, choose a date, and we will
+            email your quote while our team gets a copy.
+          </p>
+        </div>
+      </section>
+      <section class="sec bg-chalk concrete-tex">
+        <div class="wrap">
+          <div class="q-grid">
+            <div class="panel">
+              <div
+                id="qDone"
+                hidden
+              ></div>
+              <form
+                id="quoteForm"
+                novalidate
+              >
+                <div style="display: none">
+                  <input
+                    type="text"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
+                </div>
+                <fieldset class="fs">
+                  <legend>1. What are we pouring?</legend>
+                  <div
+                    class="opts"
+                    id="optService"
+                  ></div>
+                </fieldset>
+                <fieldset class="fs">
+                  <legend>2. How big is it?</legend>
+                  <p class="note">
+                    Measure roughly in feet. We confirm
+                    exact numbers at the site visit.
+                  </p>
+                  <div class="row2">
+                    <label
+                      class="f"
+                      id="lenLbl"
+                      >Length (ft)
+                      <input
+                        type="number"
+                        id="len"
+                        name="len"
+                        min="1"
+                        max="2000"
+                        step="any"
+                        inputmode="decimal"
+                        placeholder="e.g. 30" /></label
+                    ><label
+                      class="f"
+                      id="widLbl"
+                      >Width (ft)
+                      <input
+                        type="number"
+                        id="wid"
+                        name="wid"
+                        min="1"
+                        max="2000"
+                        step="any"
+                        inputmode="decimal"
+                        placeholder="e.g. 20"
+                    /></label>
+                  </div>
+                  <div
+                    class="row2"
+                    style="margin-top: 18px"
+                  >
+                    <div id="thkWrap">
+                      <label
+                        class="f"
+                        for="thk"
+                        >Thickness</label
+                      ><select
+                        id="thk"
+                        name="thk"
+                      >
+                        <option value="4">
+                          4 inches, standard
+                        </option>
+                        <option value="5">
+                          5 inches, heavier use
+                        </option>
+                        <option value="6">
+                          6 inches, trucks and equipment
+                        </option>
+                      </select>
+                    </div>
+                    <label class="f"
+                      >Concrete steps
+                      <span class="h">(optional)</span
+                      ><input
+                        type="number"
+                        name="steps"
+                        min="0"
+                        max="30"
+                        value="0"
+                        inputmode="numeric"
+                    /></label>
+                  </div>
+                </fieldset>
+                <fieldset
+                  class="fs"
+                  id="finishWrap"
+                >
+                  <legend>3. Pick a finish</legend>
+                  <div
+                    class="opts"
+                    id="optFinish"
+                  ></div>
+                </fieldset>
+                <fieldset class="fs">
+                  <legend>4. Any extras?</legend>
+                  <div
+                    class="opts"
+                    id="optExtras"
+                  ></div>
+                </fieldset>
+                <fieldset class="fs">
+                  <legend>5. Where is the job?</legend>
+                  <label
+                    class="f"
+                    for="zone"
+                    >Area</label
+                  ><select
+                    id="zone"
+                    name="zone"
+                  ></select>
+                </fieldset>
+                <fieldset class="fs">
+                  <legend>
+                    6. When would you like us?
+                  </legend>
+                  <p class="note">
+                    This is a request. We confirm the date
+                    by phone or text.
+                  </p>
+                  <div class="row2">
+                    <label
+                      class="f"
+                      for="date"
+                      >Preferred date<input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    /></label>
+                    <div>
+                      <label
+                        class="f"
+                        for="window"
+                        >Time window</label
+                      ><select
+                        id="window"
+                        name="window"
+                      >
+                        <option>Morning</option>
+                        <option>Midday</option>
+                        <option>Afternoon</option>
+                        <option>Flexible</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div style="margin-top: 18px">
+                    <label
+                      class="f"
+                      for="timeline"
+                      >When do you want the concrete
+                      poured?</label
+                    ><select
+                      id="timeline"
+                      name="timeline"
+                    >
+                      <option>As soon as possible</option>
+                      <option>Within 2 weeks</option>
+                      <option>Within a month</option>
+                      <option>
+                        Just planning and pricing
+                      </option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset class="fs">
+                  <legend>
+                    7. Where should we send your quote?
+                  </legend>
+                  <div class="form">
+                    <div class="row2">
+                      <label class="f"
+                        >Full name<input
+                          type="text"
+                          name="name"
+                          required
+                          autocomplete="name" /></label
+                      ><label class="f"
+                        >Phone<input
+                          type="tel"
+                          name="phone"
+                          required
+                          autocomplete="tel"
+                          inputmode="tel"
+                      /></label>
+                    </div>
+                    <label class="f"
+                      >Email<input
+                        type="email"
+                        name="email"
+                        required
+                        autocomplete="email" /></label
+                    ><label class="f"
+                      >Job site address or town<input
+                        type="text"
+                        name="address"
+                        required
+                        autocomplete="street-address" /></label
+                    ><label class="f"
+                      >Anything we should know?
+                      <span class="h">(optional)</span
+                      ><textarea
+                        name="notes"
+                        placeholder="Slope, access, old concrete to remove, ideas you love"
+                      ></textarea>
+                    </label>
+                  </div>
+                </fieldset>
+                <p
+                  class="err"
+                  id="qErr"
+                  role="alert"
+                ></p>
+                <button
+                  class="btn btn-primary"
+                  id="qSubmit"
+                  type="submit"
+                >
+                  Book and email my quote
+                </button>
+                <p
+                  class="cal-help"
+                  style="margin-top: 14px"
+                >
+                  You get your quote by email, and our team
+                  receives a copy. Estimates are not final
+                  prices.
+                </p>
+              </form>
+            </div>
+            <aside
+              class="summary"
+              id="qSide"
+              aria-live="polite"
+            >
+              <h3>Your estimate</h3>
+              <div
+                class="tot"
+                id="sumTot"
+              >
+                $0
+              </div>
+              <div id="sumBody"></div>
+              <small
+                >Placeholder rates. Final price confirmed at
+                your free site visit. Prices exclude permits
+                and engineering unless stated.</small
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="ftr">
+      <div class="wrap">
+        <div class="ftr-g">
+          <div>
+            <a
+              class="brand"
+              href="index.html"
+              ><img
+                src="assets/img/mark-light.png"
+                alt=""
+                width="52"
+                height="52"
+              /><span
+                ><b>Snakes Concrete</b
+                ><small
+                  >Pouring quality you can trust</small
+                ></span
+              ></a
+            >
+            <p>
+              Driveways, slabs, patios, walkways,
+              foundations and stamped concrete for homes and
+              commercial sites across Georgia, Tennessee and
+              Alabama.
+            </p>
+            <div class="soc">
+              <a
+                data-social="facebook"
+                href="#"
+                aria-label="Facebook"
+                ><svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  /></svg></a
+              ><a
+                data-social="tiktok"
+                href="#"
+                aria-label="TikTok"
+                ><svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 12a4 4 0 1 0 4 4V3a5 5 0 0 0 5 5"
+                  /></svg></a
+              ><a
+                data-wa
+                href="#"
+                aria-label="WhatsApp"
+                ><svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z" />
+                  <path
+                    d="M9 10c0 3 3 6 6 6l1.5-1.5-2-1-1 .5c-1-.5-2-1.500-2.500-2.500l.5-1-1-2z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li>
+                <a href="stamped-decorative.html"
+                  >Stamped concrete</a
+                >
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li>
+                <a href="process.html">How we work</a>
+              </li>
+              <li>
+                <a href="service-areas.html"
+                  >Service areas</a
+                >
+              </li>
+              <li>
+                <a href="reviews-faq.html"
+                  >Reviews and FAQ</a
+                >
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get started</h4>
+            <ul>
+              <li>
+                <a href="booking.html"
+                  >Book and get a quote</a
+                >
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li>
+                <a href="gallery.html">See our work</a>
+              </li>
+              <li>
+                <a href="reviews-faq.html"
+                  >Questions answered</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Talk to us</h4>
+            <ul>
+              <li>
+                <a
+                  data-phone
+                  href="#"
+                  >762-887-5610</a
+                >
+              </li>
+              <li>
+                <a
+                  data-phone="2"
+                  href="#"
+                  >706-847-9194</a
+                >
+              </li>
+              <li>
+                <a
+                  data-email
+                  href="#"
+                  >email</a
+                >
+              </li>
+              <li>Rossville, Georgia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ftr-b">
+          <span
+            >&copy; <span data-year>2026</span> Snakes
+            Concrete LLC. All rights reserved.</span
+          ><span
+            >Free estimates. Residential and
+            commercial.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/quote.js"></script>
+  </body>
+</html>
